@@ -14,6 +14,13 @@ resource "yandex_vpc_security_group" "vpn_traffic" {
     network_id = yandex_vpc_network.vpn_network.id
 
     ingress {
+        description    = "SSH"
+        port           = 1024
+        protocol       = "TCP"
+        v4_cidr_blocks = ["0.0.0.0/0"]
+    }
+
+    ingress {
         description    = "ShadowSocks"
         port           = 2048
         protocol       = "TCP"
