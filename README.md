@@ -1,2 +1,3 @@
-# vpnac
+# VPNaC
+
 VPN as Code

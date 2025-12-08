@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+
+# Terraform Secrets
+.tfstate
+terraform/**/secrets.tf
+
+# Ansible Secrets
+ansible/hosts/*
+!ansible/hosts/*example*
+
+# Config Secrets
+configs/*
+!configs/*example*
