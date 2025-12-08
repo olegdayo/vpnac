@@ -14,13 +14,13 @@
     - name: Install Outline setup script
       ansible.builtin.get_url:
         url: https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh
-        dest: /tmp/install_server.sh
+        dest: /tmp/install.sh
         mode: '666'
         force: true
       become: true
       become_user: root
 
     - name: Setup Outline
-      ansible.builtin.shell: /tmp/install_server.sh
+      ansible.builtin.shell: /tmp/install.sh
       args:
         executable: /bin/bash

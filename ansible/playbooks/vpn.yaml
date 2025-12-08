@@ -1,0 +1,4 @@
+- name: ShadowSocks
+  import_playbook: socks.yaml
+- name: VLESS
+  import_playbook: vless.yaml

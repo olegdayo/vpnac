@@ -10,3 +10,17 @@
         upgrade: true
       become: true
       become_user: root
+
+    - name: Install Outline setup script
+      ansible.builtin.get_url:
+        url: https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh
+        dest: /tmp/install.sh
+        mode: '666'
+        force: true
+      become: true
+      become_user: root
+
+    - name: Setup Outline
+      ansible.builtin.shell: /tmp/install.sh
+      args:
+        executable: /bin/bash
