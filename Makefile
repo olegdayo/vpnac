@@ -1,3 +1,7 @@
+.PHONY: dotfiles
+dotfiles:
+	cp dotfiles/.* ${HOME}
+
 .PHONY: setup-yandex-cloud
 setup-yandex-cloud: provision-yandex-cloud configure-yandex-cloud
 
