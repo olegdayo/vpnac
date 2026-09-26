@@ -35,7 +35,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./Dockerfile
+          file: ./docker/Dockerfile
           push: true
           tags: olegdayo/mtproxy:latest
           labels: ${{ steps.meta.outputs.labels }}
