@@ -1,8 +1,0 @@
-- name: Docker
-  import_playbook: docker.yaml
-- name: Herald
-  import_playbook: herald.yaml
-- name: ShadowSocks
-  import_playbook: socks.yaml
-- name: VLESS
-  import_playbook: vless.yaml

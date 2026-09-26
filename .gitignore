@@ -12,3 +12,4 @@ ansible/hosts/*
 # Config Secrets
 configs/*
 !configs/*example*
+k8s/*
