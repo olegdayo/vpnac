@@ -37,5 +37,5 @@ jobs:
           context: .
           file: ./docker/Dockerfile
           push: true
-          tags: olegdayo/mtproxy:latest
+          tags: olegdayo/mtproxy:${{ github.sha }}
           labels: ${{ steps.meta.outputs.labels }}
